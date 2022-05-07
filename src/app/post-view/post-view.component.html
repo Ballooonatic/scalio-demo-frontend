@@ -1,0 +1,20 @@
+<mat-toolbar color="primary">
+    <button mat-icon-button routerLink="/">
+        <mat-icon>arrow_back_ios</mat-icon>
+    </button>
+    <span>post {{ post?.id }}</span>
+</mat-toolbar>
+
+<div class="post-content" *ngIf="loading; else Post">
+    <mat-spinner></mat-spinner>
+</div>
+
+<ng-template #Post>
+    <div class="post-content" >
+        <h1>{{ post?.title ? post.title : "Oh no!" }}</h1>
+        
+        <p>{{ post?.body ? post.title : "Something went wrong and we couldn't find your post. Try again?" }}</p>
+    </div>
+</ng-template>
+
+

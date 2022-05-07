@@ -1,0 +1,10 @@
+<mat-toolbar color="primary">scalio demo!</mat-toolbar>
+
+<form class="flex-container">
+  <mat-form-field class="form-field" appearance="fill">
+    <mat-label>Enter your post ID</mat-label>
+    <input matInput maxlength="2" [formControl]="postId">
+    <mat-error *ngIf="postId.invalid">Please enter a number!</mat-error>
+  </mat-form-field>
+  <button mat-raised-button color="primary" (click)="viewPost()" [disabled]="postId.invalid">Find post</button>
+</form>

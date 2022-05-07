@@ -1,0 +1,18 @@
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+
+.form-field {
+    position: absolute;
+}
+
+button {
+    top: 70px;
+}
+
+input {
+    color: white;
+}

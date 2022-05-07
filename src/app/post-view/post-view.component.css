@@ -1,0 +1,13 @@
+h1, p {
+    color: white;
+}
+
+.post-content {
+    margin: 0 auto;
+    max-width: 500px;
+    padding: 10px;
+}
+
+mat-spinner {
+    margin: 0 auto;
+}
