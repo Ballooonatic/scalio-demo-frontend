@@ -8,13 +8,24 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component'
 
+const routes: Routes = [
+  { 
+    path: '',
+    component: HomeComponent
+  },
+  { 
+    path: 'post', 
+    loadChildren: () => import('./post-view/post-view.module').then(m => m.PostViewModule)
+  },
+];
+
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent
   ],
   imports: [
-    RouterModule,
+    RouterModule.forRoot(routes),
     BrowserModule,
     BrowserAnimationsModule,
     MatToolbarModule,

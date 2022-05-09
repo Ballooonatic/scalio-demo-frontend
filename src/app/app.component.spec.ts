@@ -9,16 +9,9 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 
 describe('AppComponent', () => {
-  const routes: Routes = [
-    { 
-      path: '',
-      component: HomeComponent
-    },
-    { 
-      path: 'post', 
-      loadChildren: () => import('./post-view/post-view.module').then(m => m.PostViewModule)
-    },
-  ];
+  
+  const routes: Routes = []
+
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [
