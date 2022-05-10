@@ -2,6 +2,7 @@ import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { throwError } from 'rxjs';
 import { catchError, delay } from 'rxjs/operators';
+import { environment } from 'src/environments/environment';
 
 
 @Injectable({
@@ -14,7 +15,7 @@ export class PostsService {
   ) { }
 
   getPost(postId: number) {
-    return this.http.get(`http://localhost:3000/posts/${postId}`)
+    return this.http.get(`${environment.apiUrl}/posts/${postId}`)
     .pipe(
       // delay(1000),
       // use this to see loading functionality

@@ -7,7 +7,8 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "ls": "lite-server --baseDir=\"dist/scalio-demo-frontend\""
   },
   "private": true,
   "dependencies": {
@@ -21,6 +22,7 @@
     "@angular/platform-browser": "~8.2.14",
     "@angular/platform-browser-dynamic": "~8.2.14",
     "@angular/router": "~8.2.14",
+    "@netlify-builder/deploy": "^5.0.0",
     "eslint": "^8.14.0",
     "g": "^2.0.1",
     "rxjs": "~6.4.0",
@@ -43,6 +45,7 @@
     "karma-coverage-istanbul-reporter": "~2.0.1",
     "karma-jasmine": "~2.0.1",
     "karma-jasmine-html-reporter": "^1.4.0",
+    "lite-server": "^2.6.1",
     "prettier": "2.6.2",
     "protractor": "~5.4.0",
     "ts-node": "~7.0.0",

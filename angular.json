@@ -121,6 +121,14 @@
               "devServerTarget": "scalio-demo-frontend:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "@netlify-builder/deploy:deploy",
+          "options": {
+            "outputPath": "dist/scalio-demo-frontend",
+            "netlifyToken": "4jV9ylhsqp9TYCWx2nAn5ZartM0PTvt8C2vyTcBbkjo",
+            "siteId": "510a6322-dc8f-4783-a697-302a62e3ed46"
+          }
         }
       }
     }
